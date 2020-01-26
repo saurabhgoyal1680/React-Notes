@@ -5,12 +5,19 @@ html,body,#root,.mainDiv{
   height: 100%;
 }
 .header{
-  text-align: center;
   font-size: 2em;
   color:white;
 }
 
 .searchBar{
-  margin-left:28%;
-  margin-top: 5em;
+  width: 35%;
+  float: right;
+  right: 0;
+  margin-top: 1%;
+}
+
+.folders{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top:4%;
 }

@@ -6,10 +6,10 @@ const {TextArea} = Input;
 const NewNote = Form.create({name:'form_in_modal'})(
     class extends React.Component{
         render(){
-            const {onSubmit, form, visible } = this.props;
+            const { form, visible } = this.props;
             const {getFieldDecorator} = form;
             return(
-                <Form layout="horizontal" style={{paddingTop:"2em",display:visible}} onSubmit={onSubmit}>
+                <Form layout="horizontal" style={{paddingTop:"2em",display:visible}}>
                     <br/>
                     <Form.Item>
                         {getFieldDecorator('name',{
@@ -19,7 +19,7 @@ const NewNote = Form.create({name:'form_in_modal'})(
                         )}
                     </Form.Item>
                     <Form.Item>
-                        {getFieldDecorator('Description')(
+                        {getFieldDecorator('description')(
                             <TextArea placeholder="Description" autoSize={{minRows:"4", maxRows:"6"}}></TextArea>
                         )}
                     </Form.Item>
